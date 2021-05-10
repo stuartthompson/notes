@@ -19,6 +19,23 @@ let output = [3,2,1].reduce(myReducer, 1);
 console.log('output: ' + output);
 ```
 
+Executing this code produces the following output:
+
+```
+"[0] acc: 1 val: 3 ix: 0 arr: 3,2,1"
+"[1] acc: 4 val: 2 ix: 1 arr: 3,2,1"
+"[2] acc: 6 val: 1 ix: 2 arr: 3,2,1"
+"output: 7"
+```
+
+The function was called three times, once for each value in the array. Note
+that the first value for acc is 1. This is because an initial value of 1 was
+passed to the reduce(...) call that invoked the reducer. This initial value is
+used to seed the accumulated output.
+
+The output is 7. This is the total of the input values in the array (1+2+3)
+plus the initial value of 1.
+
 ## Parameters
 
 The reducer function takes four parameters:
