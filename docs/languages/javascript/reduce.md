@@ -1,5 +1,7 @@
 # Reduce
 
+Hi, Al!
+
 The reduce function is used to iterate values in an array and reduce the
 contents into a single output. This is useful for summarizing data or
 transforming a collection into a different format.
